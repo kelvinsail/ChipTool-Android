@@ -1,0 +1,25 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/codeStyles
+/.idea/gradle.xml
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+# Shared libs & JAR libs (those libs are copied into source tree for easy Android build).
+.idea/compiler.xml
+.idea/gradle.properties
+.idea/jarRepositories.xml
+.idea/kotlinc.xml
+.idea/misc.xml
+.idea/vcs.xml
+
+/app/libs/jniLibs/arm64-v8a/libCHIPController.so
