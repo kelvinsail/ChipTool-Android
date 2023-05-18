@@ -49,6 +49,7 @@ For information about how to build the application, see the
                 - 问题：
                     - `ChipDeviceController.setDeviceAttestationDelegate(timeout, delegate);`中的timeout是wifi配网超时时间，即配网之后多久重启蓝牙广播，即便失败，也需要继续等待，所以配网失败之后导致扫码之后一直连不上蓝牙的问题
                     - 扫码后蓝牙扫描直接跳转失败页面问题，`onScanFailed`返回`errCode=2`，是因短时间不停发起蓝牙连接、没有正常关闭蓝牙移除回调导致，见`https://blog.csdn.net/sxk874890728/article/details/95049676`
+                    - demo里与亚马逊等已经商用版本发送指令有差异，少了一个30指令设置FailSafeTime，亚马逊会设置为66s
             - 第一步，检查权限之后，开始蓝牙搜索
                 - 开启一个新线程，初始化`BluetoothManager`蓝牙连接工具类，是matter的demo中提取的类
                 - `BluetoothManager.getBluetoothDevice()`搜索设备，matter库是用kotlin写的，这里会返回一个携程执行
