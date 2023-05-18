@@ -44,7 +44,6 @@ For information about how to build the application, see the
         - 获取到Wi-Fi列表、上一次成功的ssid，进入Wi-Fi配置页面
             - 选择Wi-Fi、输入密码之后，组合成`NetworkCredentialsParcelable`传递到下一步
         - 进入配网、绑定页面：
-            - 继承`BleConnectFragment`，改为一个抽象类，封装了用于蓝牙自动扫描并连接设备逻辑、以及权限获取
             - 连接成功后，获取到`BluetoothGatt`以及connectionId，在`onConnected`回调里进入下一步
             - 连接失败，进入提示页面
                 - 问题：
